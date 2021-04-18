@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+}
+
+#prof_img img{
+    display: block;
+    margin: 1rem auto;
+    border-radius: 50%;
+    max-width: 20%;
+}
+#wrapper p{
+    color: #BE3144;
+    font-size: 2rem;
+}
+#wrapper h1{
+    text-align: center;
+}
+#project_link a{
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 132, 0));
+    padding: 0.5rem;
+    text-align: center;
+  
+}
+#wrapper #project_link{
+    margin-top: 0.5rem;  
+}
+i.fas {
+    padding: 5px;
+    background:  inherit;
+
+}
+
+footer{
+    text-align: center;
+    background-color: #555555;
+    color: #fff;
+    padding: 0.4rem;
+    height: 5%;
+}
+/*cv.html*/
+#container{
+    margin: auto;
+    max-width: 800px;   
+}
+#heading{
+    margin: 3rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#heading h3{
+    font-size: 2rem;
+    line-height: 1.4;
+}
+#heading p{
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+#content{
+    margin: 1rem;
+}
+
+#content h3{
+    display: inline-block;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    color: #fff;
+    background: #000;
+}
+#content p{
+    margin: 1rem;
+}
+#career_objective .bold_p{
+    font-weight: 700;
+}
+#educational_background .margin{
+    margin-left: 2rem;
+}
+#cv_footer{
+    background-color: #fff;
+    padding-bottom: 1rem;
+    
+}
+
+  /* Animation */
+  #wrapper p {
+    transform: translateX(-1800px);
+    animation: text 1s forwards ease-in 1s;
+  }
+  
+  /* Keyframes */
+  @keyframes text {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  /* Mobile View*/
+  @media(max-width: 500px){
+    #prof_img img{
+        max-width: 50%;
+    }
+
+  }
